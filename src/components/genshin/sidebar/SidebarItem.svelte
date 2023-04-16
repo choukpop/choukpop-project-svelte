@@ -9,7 +9,7 @@
         <div class="h-8 w-8 flex justify-center mr-3 opacity-75 group-hover:opacity-100 ease-in duration-150">
             <img class="h-full" src={image} alt={label} />
         </div>
-        <span class="font-body font-semibold flex-1 text-lg leading-none text-gray-500 group-hover:text-white ease-in duration-150">
+        <span class="font-semibold flex-1 text-lg leading-none text-gray-500 group-hover:text-white ease-in duration-150">
             {label}
         </span>
     </div>

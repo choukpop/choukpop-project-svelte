@@ -1,6 +1,7 @@
 <script>
     import "../../styles/genshin.css";
-    import Sidebar from "../../components/genshin/sidebar/Sidebar.svelte";
 </script>
 
-<Sidebar />
+<svelte:head>
+    <title>Home - Genshin Impact | ChouKpop</title>
+</svelte:head>

@@ -8,26 +8,4 @@
     --fourth-color: #303b7a;
 }
 
-.genshin-body {
-    overflow: hidden;
-}
 
-.genshin-sidebar {
-    width: var(--width-sidebar);
-    background: var(--primary-color);
-}
-
-.genshin-sidebar .genshin-nav-links li.show-menu .genshin-sub-menu {
-    display: block;
-}
-
-.genshin-sidebar .genshin-language {
-    width: var(--width-sidebar);
-}
-
-.gesnhin-small-text {
-    font-size: 12px;
-    line-height: 1;
-    padding-bottom: 3px;
-    word-spacing: 200px;
-}
