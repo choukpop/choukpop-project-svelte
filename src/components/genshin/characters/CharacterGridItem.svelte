@@ -16,6 +16,7 @@
             alt={char.name}
         />
     </div>
+
     <div
         class="absolute top-0 right-0 bg-black bg-opacity-75 rounded-full flex items-center shadow-md text-white"
         style="padding: 4px; margin: -10px;"
@@ -26,6 +27,7 @@
             alt={char.element.name}
         />
     </div>
+
     <div
         class="relative overflow-hidden rounded-b-xl"
         style="height: 29px; background-color: var(--secondary-color);"
@@ -37,12 +39,3 @@
         </div>
     </div>
 </a>
-
-<style lang="postcss">
-    .small {
-        font-size: 12px;
-        line-height: 1;
-        padding-bottom: 3px;
-        word-spacing: 200px;
-    }
-</style>
