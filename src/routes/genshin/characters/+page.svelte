@@ -229,16 +229,26 @@
             <button
                 on:click={() => toggleRarity(5)}
                 style="line-height: 0.9;"
-                class="lg:ml-2 rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-4xl text-legendary-from {rarityFilter[5] ? '' : 'opacity-25'}"
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-legendary-from {rarityFilter[5] ? '' : 'opacity-25'}"
             >
-                ★
+                <img
+                    src="/images/custom/rarity_5.png"
+                    alt="claymore"
+                    class="w-8 h-8"
+                    style="min-width: 2rem;"
+                />
             </button>
             <button
                 on:click={() => toggleRarity(4)}
                 style="line-height: 0.9;"
-                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-4xl text-rare-from {rarityFilter[4] ? '' : 'opacity-25'}"
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-rare-from {rarityFilter[4] ? '' : 'opacity-25'}"
             >
-                ★
+                <img
+                    src="/images/custom/rarity_4.png"
+                    alt="claymore"
+                    class="w-8 h-8"
+                    style="min-width: 2rem;"
+                />
             </button>
         </div>
     </div>
