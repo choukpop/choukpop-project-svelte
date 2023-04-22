@@ -29,8 +29,8 @@
     </div>
 
     <div
-        class="relative overflow-hidden rounded-b-xl"
-        style="height: 29px; background-color: var(--secondary-color);"
+        class="relative overflow-hidden rounded-b-xl bg-secondary"
+        style="height: 29px;"
     >
         <div class="w-full overflow-hidden absolute bottom-0">
             <p class="text-white p-1 text-center text-sm">

@@ -3,10 +3,7 @@
     import SidebarMoreItem from "./SidebarMoreItem.svelte";
 </script>
 
-<nav
-    class="sidebar fixed w-full lg:w-64 h-full flex-col bg-background items-center z-50"
-    style="background-color: var(--primary-color);"
->
+<nav class="sidebar fixed w-64 h-full flex-col bg-primary items-center z-50">
     <div class="flex flex-col flex-1 items-center overflow-y-auto w-full px-5 py-5 z-10">
         <a href="/" class="relative py-2">
             <h1 class="font-display text-3xl font-black text-white py-4 relative z-10">

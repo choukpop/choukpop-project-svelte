@@ -9,6 +9,6 @@ export function load({ fetch, params }) {
     }
 
     return {
-        character: fetchInfo(params.charId)
+        character: fetchInfo(params.id)
     }
 }
