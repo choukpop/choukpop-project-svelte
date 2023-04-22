@@ -8,6 +8,12 @@ const config = {
       current: 'currentColor',
       black: '#000',
       white: '#fff',
+
+      primary: '#101633',
+      secondary: '#1c1f46',
+      third: '#24285a',
+      fourth: '#303b7a',
+
       rare: {
         from: '#D28FD6',
         to: '#665680',
