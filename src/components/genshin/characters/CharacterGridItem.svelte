@@ -5,7 +5,7 @@
 
 <a
     href="/genshin/characters/{id}"
-    class="m-4 cell relative cursor-pointer transition duration-100 hover:opacity-100 hover:shadow-xl hover:scale-110 rounded-xl"
+    class="m-[11px] cell relative cursor-pointer transition duration-100 hover:opacity-100 hover:shadow-xl hover:scale-110 rounded-xl"
 >
     <div class="w-full rounded-t-xl bg-opacity-50 overflow-hidden {char.rarity === 5 ? 'bg-legendary-from' : 'bg-rare-from'}">
         <img
