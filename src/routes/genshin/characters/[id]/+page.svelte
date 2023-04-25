@@ -3,19 +3,17 @@
 
     //! Data Import
     import { characters } from "../../../../data/characters";
+    import { displayBuild } from "../../../../data/displayBuild";
+
     import artifactData from "../../../../data/artifacts/en.json";
     import weaponData from "../../../../data/weapons/en.json";
-    import { builds } from "../../../../data/build";
     import { itemList } from "../../../../data/itemList";
-    import { regions } from "../../../../data/regions";
+    import { builds } from "../../../../data/build";
 
     export let data: any;
 
-    let character = Object.values(characters).filter(char => char.id === data.character.id)[0]
-
-    onMount(() => {
-		getElementChar(character.element.id)
-	})
+    const character = Object.values(characters).filter(char => char.id === data.character.id)[0]
+    const displayInfo = Object.values(displayBuild).filter(char => char.id === data.character.id)[0]
 
     let nameClass: any
     function getElementChar(element: any) {
@@ -46,6 +44,11 @@
                 break;
         }
     }
+
+    onMount(() => {
+		getElementChar(character.element.id)
+	})
+
 </script>
 
 <svelte:head>
@@ -64,9 +67,17 @@
         <div class="absolute flex justify-center items-center top-[60%] left-0 right-0 mx-auto gap-10">
             <div class={`w-32 h-32 border border-white rounded-full flex justify-center items-center ${nameClass}`}>
                 <img
-                    class="w-[75%] h-[75%]"
-                    src={`/images/skills/${character.id}/talent_3.png`}
-                    alt={character.element.name}
+                    class="w-[70%] h-[70%]"
+                    src={`/images/weapons/${displayInfo.signarute.id}.png`}
+                    alt="weapon"
+                />
+            </div>
+
+            <div class={`w-32 h-32 border border-white rounded-full flex justify-center items-center ${nameClass}`}>
+                <img
+                    class="w-[90%] h-[90%]"
+                    src={`/images/artifacts/${displayInfo.artifact}_flower.png`}
+                    alt="artifact"
                 />
             </div>
 
@@ -74,33 +85,21 @@
                 <img
                     class="w-[75%] h-[75%]"
                     src={`/images/skills/${character.id}/talent_3.png`}
-                    alt={character.element.name}
+                    alt="talent"
                 />
             </div>
 
             <div class={`w-32 h-32 border border-white rounded-full flex justify-center items-center ${nameClass}`}>
                 <img
-                    class="w-[75%] h-[75%]"
-                    src={`/images/skills/${character.id}/talent_3.png`}
-                    alt={character.element.name}
-                />
-            </div>
-
-            <div class={`w-32 h-32 border border-white rounded-full flex justify-center items-center ${nameClass}`}>
-                <img
-                    class="w-[75%] h-[75%]"
-                    src={`/images/skills/${character.id}/talent_3.png`}
-                    alt={character.element.name}
+                    class="w-[100%] h-[100%]"
+                    src='/images/custom/team_comp.png'
+                    alt="team comps"
                 />
             </div>
         </div>
 
-        <div class="border border-white">
-            <p>aegb aiowegbaiwugbawiguabgw niu auinw</p>
-            <p>aegb aiowegbaiwugbawiguabgw niu auinw</p>
-            <p>aegb aiowegbaiwugbawiguabgw niu auinw</p>
-            <p>aegb aiowegbaiwugbawiguabgw niu auinw</p>
-            <p>aegb aiowegbaiwugbawiguabgw niu auinw</p>
+        <div class="">
+
         </div>
     </main>
 
