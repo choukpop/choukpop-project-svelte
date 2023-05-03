@@ -861,6 +861,8 @@ export const itemList = {
 
   runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
 
+  runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
+
   teachings_of_admonition: {
     id: 'teachings_of_admonition',
     name: 'Teachings of Admonition',
@@ -1139,6 +1141,33 @@ export const itemList = {
   marked_shell: {
     id: 'marked_shell',
     name: 'Marked Shell',
+    rarity: 4,
+  },
+
+  mourning_flower: {
+    id: 'mourning_flower',
+    name: 'Mourning Flower',
+  },
+  evergloom_ring: {
+    id: 'evergloom_ring',
+    name: 'Evergloom Ring',
+    rarity: 4,
+  },
+  worldspan_fern: { id: 'worldspan_fern', name: 'Worldspan Fern' },
+  primordial_greenbloom: { id: 'primordial_greenbloom', name: 'Primordial Greenbloom' },
+  a_flower_yet_to_bloom: {
+    id: 'a_flower_yet_to_bloom',
+    name: 'A Flower Yet to Bloom',
+    rarity: 2,
+  },
+  treasured_flower: {
+    id: 'treasured_flower',
+    name: 'Treasured Flower',
+    rarity: 3,
+  },
+  wanderers_blooming_flower: {
+    id: 'wanderers_blooming_flower',
+    name: "Wanderer's Blooming Flower",
     rarity: 4,
   },
 };

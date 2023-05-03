@@ -729,6 +729,151 @@ export const characters = {
     },
     element: elements.geo,
   },
+  baizhu: {
+    id: 'baizhu',
+    name: 'Baizhu',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 13348,
+      atk: 193,
+      def: 500,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 3,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 2,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 10,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 4,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 20,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 8,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 30,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 12,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 45,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 20,
+          },
+          {
+            item: itemList.violetgrass,
+            amount: 60,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
+      book: [itemList.teachings_of_gold, itemList.guide_to_gold, itemList.philosophies_of_gold],
+      boss: itemList.worldspan_fern,
+    },
+    element: elements.dendro,
+  },
   barbara: {
     id: 'barbara',
     name: 'Barbara',
@@ -3918,6 +4063,151 @@ export const characters = {
       boss: itemList.mudra_of_the_malefic_general,
     },
     element: elements.hydro,
+  },
+  kaveh: {
+    id: 'kaveh',
+    name: 'Kaveh',
+    rarity: 4,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 11962,
+      atk: 234,
+      def: 751,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.mourning_flower,
+            amount: 3,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 2,
+          },
+          {
+            item: itemList.mourning_flower,
+            amount: 10,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 4,
+          },
+          {
+            item: itemList.mourning_flower,
+            amount: 20,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 8,
+          },
+          {
+            item: itemList.mourning_flower,
+            amount: 30,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 12,
+          },
+          {
+            item: itemList.mourning_flower,
+            amount: 45,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 20,
+          },
+          {
+            item: itemList.mourning_flower,
+            amount: 60,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
+      book: [itemList.teachings_of_ingenuity, itemList.guide_to_ingenuity, itemList.philosophies_of_ingenuity],
+      boss: itemList.primordial_greenbloom,
+    },
+    element: elements.dendro,
   },
   keqing: {
     id: 'keqing',
@@ -7400,8 +7690,8 @@ export const characters = {
     element: elements.dendro,
   },
   traveler_anemo: {
-    id: 'traveler_anemo',
     name: 'Traveler (Anemo)',
+    id: 'traveler_anemo',
     rarity: 5,
     element: elements.anemo,
     weapon: weapons.sword,
@@ -7491,8 +7781,8 @@ export const characters = {
     },
   },
   traveler_geo: {
-    id: 'traveler_geo',
     name: 'Traveler (Geo)',
+    id: 'traveler_geo',
     rarity: 5,
     element: elements.geo,
     weapon: weapons.sword,
@@ -7607,8 +7897,8 @@ export const characters = {
     },
   },
   traveler_electro: {
-    id: 'traveler_electro',
     name: 'Traveler (Electro)',
+    id: 'traveler_electro',
     rarity: 5,
     element: elements.electro,
     weapon: weapons.sword,
@@ -7701,6 +7991,7 @@ export const characters = {
     id: 'traveler_dendro',
     name: 'Traveler (Dendro)',
     rarity: 5,
+    element: elements.dendro,
     weapon: weapons.sword,
     stats: {
       hp: 10875,

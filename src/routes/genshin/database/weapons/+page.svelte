@@ -1,4 +1,6 @@
 <script lang="ts">
+    import weaponData from "../../../../data/weapons/en.json";
+
     let weaponFilter: any = {
         catalyst: true,
         sword: true,
@@ -92,6 +94,18 @@
                         />
                     </button>
                 </div>
+            </div>
+
+            <!-- Weapons -->
+            <div class="px-4 flex flex-wrap mt-2">
+                
+
+
+
+
+
+
+
             </div>
         </main>
 </section>

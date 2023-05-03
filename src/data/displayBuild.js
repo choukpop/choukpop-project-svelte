@@ -26,6 +26,11 @@ export const displayBuild = {
         signarute: weaponList.redhorn_stonethresher,
         artifact: 'husk_of_opulent_dreams',
     },
+    baizhu: {
+        id: 'baizhu',
+        signarute: weaponList.jadefalls_splendor,
+        artifact: 'deepwood_memories',
+    },
     barbara: {
         id: 'barbara',
         signarute: weaponList.favonius_codex,
@@ -135,6 +140,11 @@ export const displayBuild = {
         id: 'kamisato_ayato',
         signarute: weaponList.haran_geppaku_futsu,
         artifact: 'heart_of_depth',
+    },
+    kaveh: {
+        id: 'kaveh',
+        signarute: weaponList.mailed_flower,
+        artifact: 'flower_of_paradise_lost',
     },
     keqing: {
         id: 'keqing',
