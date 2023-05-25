@@ -8295,8 +8295,7 @@ export const characters = {
         itemList.philosophies_of_praxis,
       ],
       boss: itemList.mudra_of_the_malefic_general,
-    },
-    element: elements.dendro,
+    }
   },
   venti: {
     id: 'venti',

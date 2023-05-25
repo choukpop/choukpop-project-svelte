@@ -151,6 +151,11 @@ export const displayBuild = {
         signarute: weaponList.lions_roar,
         artifact: 'thundering_fury',
     },
+    kirara: {
+        id: 'kirara',
+        signarute: weaponList["key_of_khaj-nisut"],
+        artifact: 'tenacity_of_the_millelith',
+    },
     klee: {
         id: 'klee',
         signarute: weaponList.dodoco_tales,
