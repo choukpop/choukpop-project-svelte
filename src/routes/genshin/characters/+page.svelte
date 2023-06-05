@@ -1,9 +1,13 @@
 <script lang="ts">
+    import { onMount } from "svelte";
+
     // Components
     import CharacterGridItem from "../../../components/genshin/characters/CharacterGridItem.svelte";
 
     // Data
     import { characters } from "../../../data/characters";
+
+    //#region Filters
 
     let elementFilter: any = {
         electro: true,
@@ -13,25 +17,25 @@
         pyro: true,
         cryo: true,
         geo: true,
-    };
+    }
     let weaponFilter: any = {
         catalyst: true,
         sword: true,
         polearm: true,
         bow: true,
         claymore: true,
-    };
+    }
     let rarityFilter: any = {
         5: true,
         4: true,
-    };
-    let firstClickElement = true;
-    let firstClickWeapon = true;
-    let firstClicRarity = true;
+    }
+    let firstClickElement = true
+    let firstClickWeapon = true
+    let firstClicRarity = true
 
     function toggleElement(element: any) {
         if (firstClickElement) {
-            firstClickElement = false;
+            firstClickElement = false
             elementFilter = {
                 electro: false,
                 anemo: false,
@@ -40,40 +44,48 @@
                 pyro: false,
                 cryo: false,
                 geo: false,
-            };
+            }
         }
 
-        elementFilter[element] = !elementFilter[element];
+        elementFilter[element] = !elementFilter[element]
     }
 
     function toggleWeapon(weapon: any) {
         if (firstClickWeapon) {
-            firstClickWeapon = false;
+            firstClickWeapon = false
             weaponFilter = {
                 catalyst: false,
                 sword: false,
                 polearm: false,
                 bow: false,
                 claymore: false,
-            };
+            }
         }
 
-        weaponFilter[weapon] = !weaponFilter[weapon];
+        weaponFilter[weapon] = !weaponFilter[weapon]
     }
 
     function toggleRarity(rarity: any) {
         if (firstClicRarity) {
-            firstClicRarity = false;
+            firstClicRarity = false
             rarityFilter = {
                 5: false,
                 4: false,
-            };
+            }
         }
 
-        rarityFilter[rarity] = !rarityFilter[rarity];
+        rarityFilter[rarity] = !rarityFilter[rarity]
     }
 
-    $: chars = Object.entries(characters).filter((event) => elementFilter[event[1].element.id] && weaponFilter[event[1].weapon.id] && rarityFilter[event[1].rarity]);
+    $: chars = Object.entries(characters).filter((event) => elementFilter[event[1].element.id] && weaponFilter[event[1].weapon.id] && rarityFilter[event[1].rarity])
+    //#endregion Filters
+
+    let getLocalStorage: any
+    onMount(() => {
+        getLocalStorage = localStorage.getItem("char-column");
+    })
+
+
 </script>
 
 <svelte:head>
@@ -253,7 +265,12 @@
         </div>
 
         <!-- Characters -->
-        <div class="px-4 flex flex-wrap mt-2">
+        <!-- <div class="px-4 flex flex-wrap mt-2">
+            {#each chars as [id, char]}
+                <CharacterGridItem {id} {char} />
+            {/each}
+        </div> -->
+        <div class="px-4 grid gap-4 mt-2" style={`grid-template-columns: repeat(${getLocalStorage != 'default' ? getLocalStorage : "8"}, minmax(0, 1fr));`}>
             {#each chars as [id, char]}
                 <CharacterGridItem {id} {char} />
             {/each}
