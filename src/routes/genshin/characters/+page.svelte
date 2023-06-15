@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import { storeSettingCharacterColumn } from "../stores"
 
     // Components
     import CharacterGridItem from "../../../components/genshin/characters/CharacterGridItem.svelte";
@@ -79,12 +80,6 @@
 
     $: chars = Object.entries(characters).filter((event) => elementFilter[event[1].element.id] && weaponFilter[event[1].weapon.id] && rarityFilter[event[1].rarity])
     //#endregion Filters
-
-    let getLocalStorage: any
-    onMount(() => {
-        getLocalStorage = localStorage.getItem("char-column");
-    })
-
 
 </script>
 
@@ -265,12 +260,7 @@
         </div>
 
         <!-- Characters -->
-        <!-- <div class="px-4 flex flex-wrap mt-2">
-            {#each chars as [id, char]}
-                <CharacterGridItem {id} {char} />
-            {/each}
-        </div> -->
-        <div class="px-4 grid gap-4 mt-2" style={`grid-template-columns: repeat(${getLocalStorage != 'default' ? getLocalStorage : "8"}, minmax(0, 1fr));`}>
+        <div class="px-4 grid gap-4 mt-2" style={`grid-template-columns: repeat(${$storeSettingCharacterColumn}, minmax(0, 1fr));`}>
             {#each chars as [id, char]}
                 <CharacterGridItem {id} {char} />
             {/each}
